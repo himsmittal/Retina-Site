@@ -1,0 +1,19 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "org.template.orange.OrangeEngine",
+  "datasource": {
+    "params" : {
+      "appName": "orange"
+    }
+  },
+  "algorithms": [
+    {
+      "name": "algo",
+      "params": {
+        "numberOfCenters" : 2,
+        "numberOfIterations": 100
+      }
+    }
+  ]
+}

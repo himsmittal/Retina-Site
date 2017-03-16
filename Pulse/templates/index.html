@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+  {% block jumbotron %}
+    {{ super() }}
+  {% endblock %}
+  {% block content %}
+  <div class="album text-muted">
+        <div class="row">
+          <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/anomaly2.png') }}">
+              <a href="plot"><h5 class="card-title"><strong>Anomaly Detection</strong></h5></a>
+              <p class="text-muted">Outliers can sometimes take you out of business. Pulse helps your team to get to the bottom of anomalies before they get to the bottom of your infrastructures</p>
+          </div>
+          <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/prediction1.png') }}">
+              <a href="predictions"><h5 class="card-title"><strong>Predictions</strong></h5></a>
+              <p class="text-muted">Want to see how your infra might perform in future. Pulse helps you with state of the art prediction tools and plan for possible incident.</p>
+          </div>
+          <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/clusters_1.png') }}">
+              <a><h5 class="card-title"><strong>Clustering</strong></h5></a>
+              <p class="text-muted">Pattern analysis on the huge metrics data your firm collects. Leave it to Pulse. Coming Soon !</p>
+          </div>
+          <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/classification1.png') }}">
+              <a><h5 class="card-title"><strong>Classification</strong></h5></a>
+              <p class="text-muted">Need quick answers on questions on your infra. How many SKUs we have. How many Pods are having high response times. Pulse can help you. Coming Soon !</p>
+          </div>
+        </div>
+  </div>
+  {% endblock %}
+  

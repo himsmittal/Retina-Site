@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block styles %}
+        .card > img {
+          border: 3px solid #009fdf;
+          border-radius: 25px;
+        }
+{% endblock %}
+
+{% block jumbotron %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/ajay.png') }}">
+              <a href="plot"><h5 class="card-title"><strong>Ajay Krishna Borra</strong></h5></a>
+            </div>
+            <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/amal.png') }}">
+              <a><h5 class="card-title"><strong>Amal T S</strong></h5></a>
+            </div>
+            <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/santosh.png') }}">
+              <a><h5 class="card-title"><strong>Santosh Vaddadi</strong></h5></a>
+            </div>
+            <div class="col-md-3 text-center card">
+              <img class="homepage-grid-icon" src="{{ url_for('static', filename='img/srikanth.png') }}">
+              <a><h5 class="card-title"><strong>Srikanth Boddepalli</strong></h5></a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5 text-center"><h4 style="color: #149bd6;">IPDO Cloud </h4></div>
+        </div>
+{% endblock %}

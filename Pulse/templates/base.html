@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="{{ url_for('static', filename='img/deep.png') }}">
+    <title>Retina Pulse</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/album.css') }}" rel="stylesheet">
+    <style>
+      {% block styles %} {% endblock %}
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <span class="glyphicon glyphicon-home"></span>
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="port">
+    {% block jumbotron %}
+
+    <section class="jumbotron text-xs-center jumbotron-bg">
+      <div class="container" style="
+    background: url(/static/img/deep.png);
+    background-repeat: no-repeat;
+    padding-left: 200px;">
+        <h1 class="jumbotron-heading">Retina.AI</h1>
+        <p class="lead text-right" style="padding-right: 70px;">Analyize Predict Act <img style="width: 50px; padding-left: 10px;" src="/static/img/heartbeat.gif"></p>
+      </div>
+    </section>
+
+    {% endblock %}
+
+    <div class="album text-muted">
+      <div class="container">
+
+       {% block content %}{% endblock %}
+  
+      </div>
+    </div>
+          <footer class="text-center">
+         <!-- <b>.</b>
+          <a href="/team"> Team </a>
+          <b>.</b>
+          <a href="https://salesforce.quip.com/gS0vAQaAJ5Kj"> Quip Notes </a> -->
+        </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        {% block scripts %} {% endblock %}
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="356" height="280" viewBox="0 0 356 280" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">356x280</text></svg>
+</body>
+</html>

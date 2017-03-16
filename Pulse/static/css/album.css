@@ -1,0 +1,124 @@
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-collapse .container-fluid {
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid #55595c;
+}
+
+.navbar-collapse h4 {
+  color: #818a91;
+}
+
+.navbar-collapse .text-muted {
+  color: #818a91;
+}
+
+.about {
+  float: left;
+  max-width: 30rem;
+  margin-right: 3rem;
+}
+
+.social a {
+  font-weight: 500;
+  color: #eceeef;
+}
+.social a:hover {
+  color: #fff;
+}
+
+.jumbotron {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 80rem;
+  padding-right: 25rem;
+  padding-top: 5rem;
+}
+
+.album {
+  min-height: 30rem; /* Can be removed; just added for demo purposes */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f7f7f7;
+}
+
+
+.card > img {
+  margin-bottom: .75rem;
+  height: 100px;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+.card-title{
+  color: #149bd6;
+  font-size: 16px;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.navbar-default {
+    background-color: rgba(138, 136, 136, 0);
+    border-color: #e7e7e7;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+.c-well{
+  background: #5dbce5;
+  border-radius: 0px;
+}
+
+.loading{
+    border-radius: 100px;
+    min-height: 130px;
+    width: 130px;
+    margin: 100px auto auto auto;
+    background: url("../img/deep.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#chart{
+  width:1170px;
+  margin:auto;
+}
+
+.t-well{
+    width: 1140px;
+    margin: auto;
+    min-height: 500px;
+    background: white;
+}
+
+.btn-default.active, .btn-primary:active, .btn-default.active.focus{
+  background-color: #07ff07;
+}

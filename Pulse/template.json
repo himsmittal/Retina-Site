@@ -1,0 +1,7 @@
+{
+  "pio": {
+    "version": {
+      "min": "0.10.0-incubating"
+    }
+  }
+}
